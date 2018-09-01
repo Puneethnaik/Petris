@@ -1,13 +1,11 @@
 package com.example.puneeth.petris;
 
 import android.content.Intent;
-import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.VideoView;
 
 public class MainActivity extends AppCompatActivity {
     MediaPlayer backgroundMusic;
@@ -25,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void gamePlay(View view){
-        startActivity(new Intent(MainActivity.this, GamePlay.class));
+        startActivity(new Intent(MainActivity.this, GamePlayActivity.class));
 
     }
     public void exit(View view){
